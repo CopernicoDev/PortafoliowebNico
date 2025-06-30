@@ -1,23 +1,25 @@
+/* =======================
+   VARIABLES Y RESET
+======================= */
 :root {
-  /* COLORES */
+  /* Colores */
   --whiteColor: #ffffff;
   --whiteColor-70: #ffffffb3;
-
   --yellowColor: rgba(255, 255, 0, 0.886);
   --blueColor: rgba(0, 128, 255, 0.909);
   --redColor: rgba(255, 38, 0, 0.909);
   --buttonSocialColor: #222222;
   --buttonSocialColor__hover: rgba(54, 54, 54, 0.297);
 
-  /* TAMAÑO DE TEXTO */
+  /* Tamaños de texto */
   --navLink__textSize: clamp(14px, 4vw, 22px);
   --principalTitleSize: clamp(1.8rem, 6vw, 3rem);
   --principalParagraphSize: clamp(1rem, 3vw, 1.3rem);
-
   --SectionTitleSize: clamp(1.9rem, 6vw, 2.3rem);
   --ExperienciaTitleSize: clamp(1.3rem, 5vw, 1.9rem);
   --ExperienceParagraphSixe: clamp(1rem, 4vw, 1.3rem);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +28,7 @@
 
 body {
   min-height: 100dvh;
-  background: #000000;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #434343, #000000);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #434343, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   font-family: system-ui;
 }
 
@@ -47,8 +43,7 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
 
@@ -56,6 +51,9 @@ img {
   max-width: 100%;
 }
 
+/* =======================
+   HEADER Y NAVBAR
+======================= */
 .header {
   height: auto;
 }
@@ -74,6 +72,9 @@ img {
   color: var(--whiteColor);
 }
 
+/* =======================
+   SECCIÓN PRINCIPAL
+======================= */
 .principalSection {
   margin-top: 80px;
 }
@@ -108,15 +109,14 @@ img {
   padding: 7px 25px;
   border: 1px solid rgba(255, 255, 255, 0.308);
   border-radius: 30px;
-
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/*Tecnologias y Lenguajes Section*/
-
-/*Lenguajes section*/
+/* =======================
+   TECNOLOGÍAS Y LENGUAJES
+======================= */
 .technologiesandlanguages {
   margin: 50px auto;
 }
@@ -127,42 +127,33 @@ img {
   margin-bottom: 30px;
 }
 
-.technologiesandlanguages h2 svg {
+.technologiesandlanguages h2 svg,
+.technologiesandlanguages h3 svg,
+.tecnologias svg {
   width: 20px;
   height: 20px;
 }
 
-.technologiesandlanguages h3{
+.technologiesandlanguages h3 {
   color: var(--whiteColor);
   font-size: var(--ExperienciaTitleSize);
-  margin-top: 20px;
-  margin-bottom: 30px;
-
+ 
 }
 
-.technologiesandlanguages h3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.technologiesandlanguages img{
+.technologiesandlanguages img {
   width: 24px;
   height: 24px;
 }
 
 .icon-list {
   display: flex;
-  justify-content: start; /* Alinea los íconos a la izquierda */
-  gap: 10px; /* Espacio entre los íconos, ajusta según sea necesario */
-  align-items: center; /* Alinea verticalmente al centro si es necesario */
+  justify-content: flex-start;
+  gap: 4px;
+  align-items: center;
   margin-left: 50px;
 }
 
-
-
-/*Tecnologias Section */
-
-.tecnologias{
+.tecnologias {
   color: var(--whiteColor);
   font-size: var(--ExperienciaTitleSize);
   margin-top: 25px;
@@ -170,13 +161,9 @@ img {
   margin-left: 20px;
 }
 
-.tecnologias svg{
-  width: 20px;
-  height: 20px;
-}
-
-/* EXPERIENCE SECTION */
-
+/* =======================
+   EXPERIENCIA
+======================= */
 .experienceSection {
   margin: 50px auto;
 }
@@ -192,8 +179,6 @@ img {
   height: 20px;
 }
 
-
-/* ul */
 .experienceList {
   border-inline-start: 1px solid white;
   position: relative;
@@ -224,20 +209,17 @@ img {
   background-color: var(--whiteColor);
   padding: 10px 25px;
   border-radius: 10px;
-
   font-weight: 700;
   color: black;
-
   width: max-content;
-
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .experienceItemList a:hover {
   color: rgb(82, 152, 196);
 }
-
 
 .decorativeCircleList {
   height: 10px;
@@ -245,17 +227,13 @@ img {
   background-color: white;
   border-radius: 50%;
   position: absolute;
-
   left: -5px;
   margin-top: 7px;
 }
 
-/* PROJECT SECTION */
-
-.projectsSection {
-
-}
-
+/* =======================
+   PROYECTOS
+======================= */
 .projectsSection h2 {
   color: var(--whiteColor);
   font-size: var(--SectionTitleSize);
@@ -286,7 +264,6 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
-
   margin-bottom: 20px;
 }
 
@@ -297,6 +274,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.598);
   padding: 4px 20px;
   border-radius: 30px;
+  margin-right: 8px;
 }
 
 .experienceItem .containerIcons span svg {
@@ -304,32 +282,25 @@ img {
   height: 40px;
 }
 
-.containerIcons  svg{
+.containerIcons svg {
   margin-right: 10px;
-  margin-bottom: 10px;
-
+  /* Elimina margin-bottom para mejor alineación */
 }
 
-.Phpicon{
-  color: aqua;
-}
-
-
-.cssIcon {
-  color: rgb(50, 138, 232);
-}
-
-.containerIcons span:nth-child(1) {
-}
-
-.containerIcons span:nth-child(2) {
+.containerIcons .java svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+  /* Ajuste para centrar el contenido visualmente */
+  transform: translateY(-5px); /* Ajusta el valor hasta que quede alineado */
 }
 
 
-.experienceItem img {
 
-}
 
+/* =======================
+   MEDIA QUERIES
+======================= */
 @media (min-width: 700px) {
   .navLink {
     font-size: var(--navLink__textSize);
@@ -340,11 +311,9 @@ img {
   .navLink:nth-child(1):hover {
     color: var(--yellowColor);
   }
-
   .navLink:nth-child(2):hover {
     color: var(--blueColor);
   }
-
   .navLink:nth-child(3):hover {
     color: var(--redColor);
   }
