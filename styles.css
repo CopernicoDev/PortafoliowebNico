@@ -146,9 +146,19 @@ img {
 .icon-list {
   display: flex;
   justify-content: flex-start;
-  gap: 4px;
-  align-items: center;
-  margin-left: 50px;
+  gap: 10px;
+  align-items: flex-end; /* Cambia a flex-end */
+  margin-top: 25px;
+}
+
+
+.icon-list svg {
+  width: 100px;
+  height: 100px;
+}
+
+.icon-list .icon-large {
+  transform: scale(1.25);
 }
 
 .tecnologias {
@@ -156,7 +166,6 @@ img {
   font-size: var(--ExperienciaTitleSize);
   margin-top: 25px;
   margin-bottom: 30px;
-  margin-left: 20px;
 }
 
 /* =======================
@@ -290,21 +299,7 @@ img {
   transform: translateY(40px); /* Ajusta el valor hasta que quede alineado */
 }
 
-.containerIcons .java svg {
-  width: 40px;
-  height: 40px;
-  display: block;
-  /* Ajuste para centrar el contenido visualmente */
-  transform: translateY(-6px); /* Ajusta el valor hasta que quede alineado */
-}
 
-.containerIcons .sprinboot svg {
-  width: 40px;
-  height: 40px;
-  display: block;
-  /* Ajuste para centrar el contenido visualmente */
-  transform: translateY(-5px); /* Ajusta el valor hasta que quede alineado */
-}
 
 
 
