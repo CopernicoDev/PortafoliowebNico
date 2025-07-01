@@ -149,6 +149,7 @@ img {
   gap: 10px;
   align-items: flex-end; /* Cambia a flex-end */
   margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 
@@ -294,10 +295,8 @@ img {
   
 }
 
-.containerIcons .javascript svg {
-  /* Ajuste para centrar el contenido visualmente */
-  transform: translateY(40px); /* Ajusta el valor hasta que quede alineado */
-}
+
+
 
 
 
