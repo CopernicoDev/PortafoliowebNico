@@ -5,9 +5,7 @@
   /* Colores */
   --whiteColor: #ffffff;
   --whiteColor-70: #ffffffb3;
-  --yellowColor: rgba(255, 255, 0, 0.886);
-  --blueColor: rgba(0, 128, 255, 0.909);
-  --redColor: rgba(255, 38, 0, 0.909);
+  color: rgb(82, 152, 196);
   --buttonSocialColor: #222222;
   --buttonSocialColor__hover: rgba(54, 54, 54, 0.297);
 
@@ -284,7 +282,12 @@ img {
 
 .containerIcons svg {
   margin-right: 10px;
-  /* Elimina margin-bottom para mejor alineación */
+  
+}
+
+.containerIcons .javascript svg {
+  /* Ajuste para centrar el contenido visualmente */
+  transform: translateY(40px); /* Ajusta el valor hasta que quede alineado */
 }
 
 .containerIcons .java svg {
