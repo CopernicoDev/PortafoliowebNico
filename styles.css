@@ -150,10 +150,11 @@ img {
 .icon-list {
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 25px;
   align-items: flex-end; /* Cambia a flex-end */
   margin-top: 25px;
   margin-bottom: 30px;
+
 }
 
 
